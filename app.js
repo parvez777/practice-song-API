@@ -56,7 +56,8 @@ function searchLyric(artist, song){
     .then(data => showLyrics(data.lyrics))
 
     const showLyrics = (lyric) =>{
-        const contentDiv = document.querySelector('.lyricsDiv');
+        if(lyric != undefined){
+            const contentDiv = document.querySelector('.lyricsDiv');
         let content = `
         <div class="lyricsDisplay">
             <div class="lyrics">
@@ -65,9 +66,11 @@ function searchLyric(artist, song){
             </div>
         </div>
         `
-         
-
-        contentDiv.innerHTML = content;
+         contentDiv.innerHTML = content;
+        }
+        else{
+            alert("Not Found")
+        }
     }
 
 }
