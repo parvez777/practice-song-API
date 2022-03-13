@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(223, 222, 222);
+}
+
+.heading{
+    text-align: center;
+    padding: 20px 0;
+    color: #555;
+    font-size: 60px;
+}
+.search-area{
+    width: 450px;
+    height: 50px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    padding: 30px 0;
+}
+
+/* >>>>>>>>>>>>>>> Content Section <<<<<<<<<<<<<<<<< */
+.content-sectin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+#cotent-box{
+    width: 908px;
+    height: 250px;
+    background: wheat;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+    
+}
+#cotent-box h1{
+    text-align: center;
+    color: crimson;
+    font-size: 25px;
+}
+span{
+    color: blue;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h6{
+    padding: 5px 0;
+}
+audio{
+    padding: 5px 0;
+}
+#lyric-button{
+    padding: 5px 10px;
+    margin: 8px 0;
+}
+.lyricsDiv{
+    display: none;
+}
+.lyrics{
+    height: auto;
+    width: 500px;
+    position: absolute;
+    border: 1px solid #555;
+    top: 0;
+    right: 5%;
+    padding: 15px;
+    background: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: baseline;
+    transition: ease-in 0.10s;
+}
+#cross{
+    text-align: end;
+   font-size: 25px; 
+   cursor: pointer;
+}
+p{
+    padding: 15px 5px;
+}
+
+/* >>>>>>>>>>>>> Media Quary <<<<<<<<<<<<<< */
+@media only screen and (max-width: 600px){
+    .content{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .heading{
+        text-align: center;
+        padding-top: 20px;
+        color: #555;
+        font-size: 30px;
+    }
+    #cotent-box{
+        width: 908px;
+        height: 270px;
+        background: wheat;
+        padding: 20px;
+        border-radius: 20px;
+        
+    }
+    .lyrics{
+        height: auto;
+        width: 300px;
+        position: absolute;
+        border: 1px solid #555;
+        top: 0;
+        right: 5%;
+        padding: 15px;
+        background: whitesmoke;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: baseline;
+    }
+}
